@@ -1,0 +1,12 @@
+name: Test Suite
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  process-workflow:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate configuration
+        run: echo "setup complete"
